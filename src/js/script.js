@@ -8,7 +8,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-const themeToggle = document.getElementById('themeToggle');
+const themeToggle = document.getElementById('toggleTheme');
 const themeIcon = themeToggle.querySelector('i');
 
 themeToggle.addEventListener('click', () => {
