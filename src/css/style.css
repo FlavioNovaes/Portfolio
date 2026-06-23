@@ -383,3 +383,15 @@ img {
     color: var(--muted-text);
     font-size: 0.9rem;
 }
+
+.footer {
+    padding: 28px 8%;
+    text-align: center;
+    background: var(--second-bg-color);
+    border-top: 1px solid var(--border-color);
+}
+
+.footer p {
+    color: var(--muted-text);
+    font-size: 0.95rem;
+}
