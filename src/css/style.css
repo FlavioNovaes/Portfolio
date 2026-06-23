@@ -276,3 +276,24 @@ img {
     padding: 7px 12px;
     border-radius: 999px;
 }
+
+.project-links {
+    display: flex;
+    gap: 12px;
+    margin: 0 24px 26px;
+}
+
+.project-links a {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    padding: 9px 13px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.project-links a:hover {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
