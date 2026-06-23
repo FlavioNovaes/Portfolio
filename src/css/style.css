@@ -340,3 +340,46 @@ img {
     font-weight: 700;
     color: var(--text-color);
 }
+
+.contact-container {
+    max-width: 900px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.contact-card {
+    background: var(--card-color);
+    border: 1px solid var(--border-color);
+    border-radius: 18px;
+    padding: 28px 22px;
+
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    box-shadow: var(--shadow);
+    transition: 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--primary-color);
+}
+
+.contact-card i {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.contact-card h3 {
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+
+.contact-card p {
+    color: var(--muted-text);
+    font-size: 0.9rem;
+}
