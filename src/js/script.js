@@ -1,0 +1,9 @@
+const btnTopo = document.getElementById('btnTopo');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 400) {
+        btnTopo.classList.add('show');
+    } else {
+        btnTopo.classList.remove('show');
+    }
+});
