@@ -209,7 +209,7 @@ img {
 .btn.secondary {
     border: 1px solid var(--border-color);
     color: var(--text-color);
-    background: #f8fafc;
+    background: var(--card-color);
 }
 
 .btn.secondary:hover {
