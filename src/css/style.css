@@ -297,6 +297,7 @@ img {
     display: flex;
     gap: 12px;
     margin: 0 24px 26px;
+    flex: wrap;
 }
 
 .project-links a {
