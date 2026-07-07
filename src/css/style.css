@@ -363,7 +363,6 @@ img {
 .contact-container {
     max-width: 900px;
     margin: 0 auto;
-
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 24px;
@@ -374,10 +373,10 @@ img {
     border: 1px solid var(--border-color);
     border-radius: 18px;
     padding: 28px 22px;
-
+    
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 14px;
 
     box-shadow: var(--shadow);
     transition: 0.3s;
@@ -401,6 +400,7 @@ img {
 .contact-card p {
     color: var(--muted-text);
     font-size: 0.9rem;
+    overflow-wrap: anywhere;
 }
 
 .footer {
@@ -471,4 +471,78 @@ img {
 .toggle-theme:hover {
     color: var(--primary-color);
     border-color: var(--primary-color);
+}
+
+.menu-toggle {
+    width: 42px;
+    height: 42px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    background: var(--card-color);
+    color: var(--text-color);
+
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu-toggle:hover {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .navbar {
+        position: absolute;
+        top: calc(100% + 10px);
+        left: 5%;
+        right: 5%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+
+        padding: 16px;
+
+        background: var(--card-color);
+        border: 1px solid var(--border-color);
+        border-radius: 16px;
+        box-shadow: var(--shadow);
+
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+
+        transition: 0.3s;
+    }
+
+    .navbar.open {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .navbar a {
+        width: 100%;
+        padding: 12px 14px;
+        border-radius: 10px;
+    }
+
+    .navbar a:hover,
+    .navbar a.active {
+        background: rgba(0, 102, 255, 0.08);
+    }
+
+    .navbar a::after {
+        display: none;
+    }
 }

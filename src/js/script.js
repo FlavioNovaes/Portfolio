@@ -21,4 +21,31 @@ themeToggle.addEventListener('click', () => {
         themeIcon.classList.remove('fa-sun');
         themeIcon.classList.add('fa-moon');
     }
+})
+
+const menuToggle = document.getElementById('menuToggle');
+const navbar = document.getElementById('navbar');
+const menuIcon = menuToggle.querySelector('i');
+
+menuToggle.addEventListener('click', () => {
+  navbar.classList.toggle('open');
+
+  if (navbar.classList.contains('open')) {
+    menuIcon.classList.remove('fa-bars');
+    menuIcon.classList.add('fa-xmark');
+  } else {
+    menuIcon.classList.remove('fa-xmark');
+    menuIcon.classList.add('fa-bars');
+  }
+});
+
+const navLinks = document.querySelectorAll('.navbar a');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navbar.classList.remove('open');
+
+        menuIcon.classList.remove('fa-xmark');
+        menuIcon.classList.add('fa-bars');
+    });
 });
