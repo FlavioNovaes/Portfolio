@@ -500,6 +500,35 @@ img {
 }
 
 @media (max-width: 768px) {
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-content {
+        order: 2;
+    }
+
+    .hero-image {
+        order: 1;
+        justify-content: center;
+    }
+
+    .image-shape {
+        width: 240px;
+        margin: 0 auto 24px;
+    }
+
+    .description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tech-icons,
+    .hero-buttons {
+        justify-content: center;
+    }
+
     .menu-toggle {
         display: flex;
     }
