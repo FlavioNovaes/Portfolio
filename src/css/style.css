@@ -219,17 +219,21 @@ img {
 }
 
 .section {
+    width: 100%;
     padding: 100px 8%;
 }
 
 .section-title {
+    width: 100%;
     font-size: clamp(2rem, 4vw, 3rem);
     text-align: center;
     margin-bottom: 12px;
+    margin: 0 auto 12px;
     color: var(--text-color);
 }
 
 .section-subtitle {
+    width: 100%;
     max-width: 650px;
     margin: 0 auto 50px;
     text-align: center;
